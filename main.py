@@ -15,8 +15,7 @@ app = FastAPI(
     version="1.0.0",
 )
  
-app.include_router(scoreboard_router, prefix="/api/v1", tags=["Scoreboard"])
-app.include_router(innings_router,    prefix="/api/v1", tags=["Innings"])
+app.include_router(innings_router,    prefix="/api/v1", tags=["Innings Summary"])
  
  
 @app.get("/health", tags=["Health"])
